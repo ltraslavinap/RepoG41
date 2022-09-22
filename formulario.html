@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formualarios</title>
+</head>
+<body>
+    <h1>FORMULARIOS</h1>
+    
+    <form action="../pagina-IDE/index.html" method="POST">
+        <h3>Texto</h3>
+        <label for="nombre">Nombre de usuario:</label>
+        <input type="text" name="nombre" id="nombre" maxlength="50">
+
+        <h3>Contraseña</h3>
+        <label for="clave">Contraseña:</label>
+        <input type="password" name="clave" id="clave" maxlength="15">
+
+        <h3>Area de texto</h3>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escriba su comentario"></textarea>
+
+        <h3>Spinner</h3>
+        
+        <label for="Spinner">Entrada numérica:</label>
+        <input type="number" name="spinner" id="spinner" min="1" max="10" step="1" placeholder="[1-10]" required>
+        
+        <h3>Fecha</h3>
+        <label for="Fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha">
+
+        <h3>Fecha - Hora</h3>
+        <label for="fecha-hora">Fecha-Hora</label>
+        <input type="datetime-local" name="fecha" id="fecha">
+
+        <h3>Hora</h3>
+        <label for="hora">Hora</label>
+        <input type="time" name="hora" id="hora">
+
+        <h3>Semana</h3>
+        <label for="semana">Semana:</label>
+        <input type="week" name="Semana" id="semana">
+
+        <h3>Radio</h3>
+        <label for="genero">Genero:</label>
+        <input type="radio" name="genero" id="genero" value="F">Femenino
+        <input type="radio" name="genero" id="genero" value="M">Masculino
+
+        <h3>Lista deplegable</h3>
+        <label for="tipo_documento">Tipo de documento:</label>
+        <select name="tipo_documento" id="tipo_documento">Tipo de documento
+            <option value="TI">Tarjeta de identidad</option>
+            <option value="CC" selected>Cedula de ciudadania</option>
+            <option value="CE">Cedula de Extranjeria</option>
+        </select>
+
+        <h3>Adjuntar un archivo</h3>
+        <label for="Adjuntar">Archivo:</label>
+        <input type="file" name="archivo" id="archivo">
+
+        <h3>Enviar - Boton</h3>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
